@@ -1,0 +1,156 @@
+.main{
+ width:100vw;
+ height:100vh;
+ padding: 40px;
+  background-image:url('/currency.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+    display:flex;
+    flex-wrap:wrap; 
+    flex-direction:row; 
+    row-gap:15px;
+    justify-content:space-around;
+    align-items:center;  
+}
+
+.main{
+  min-height: 100dvh;
+} 
+
+#heading{
+  color:rgb(19, 114, 14);
+    font-weight:800;
+    font-size:90px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.card{
+  width:360px;
+  height:450px;
+  background-color:rgba(255, 255, 255, 0.427);
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  row-gap:10px;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.select{
+  width:60px;
+  height: 45px;
+  border:none;
+  outline:none;
+  background-color:#19642f;
+  color:white;
+  border-radius: 10px;
+
+}
+
+.inp{
+  height:45px;
+  border:none;
+  outline:none;
+  background-color:#19642f;
+  font-size:20px;
+  color:white;
+  padding-left:10px;
+   border-radius: 10px;
+}
+
+.calculate{
+  display:flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  align-items:center;
+
+}
+
+#btn{
+  padding:0 10px;
+  width:fit-content;
+  height: 45px;
+  font-size:20px;
+  font-weight:700;
+  background-color:blue;
+  color:white;
+  border-radius: 10px;
+  border:none;
+  outline:none;
+}
+
+
+#btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media (max-width: 768px){
+
+  .main{
+    width:100vw;
+    height:100vh;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+   #heading{
+    font-size: 42px;   /* big heading → mobile size */
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .card{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+   .card h1{
+    font-size: 22px;
+  }
+
+  .calculate{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .select{
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+   .inp{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #btn{
+    height: 40px;
+    font-size: 16px;
+    padding: 0 14px;
+  }
+}
